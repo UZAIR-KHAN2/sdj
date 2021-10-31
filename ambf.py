@@ -192,10 +192,10 @@ def sdj():
                 titid  = nunu.replace(" [✓] "," \x1b[0m[\x1b[1;92m✓\x1b[0m]\x1b[1;92m ").replace(" [×] ", " \x1b[0m[\x1b[1;93m×\x1b[0m]\x1b[1;93m ")
                 print("%s%s"%(titid,N));time.sleep(0.03)
             print(" %s[%s#%s] ═══════════════════════════════════════"%(N,O,N))
-            raw_input('\n  [ %sBACK%s ] '%(O,N));mr_error()
+            raw_input('\n  [ %sBACK%s ] '%(O,N));sdj()
         except (IOError):
             print("\n %s[%s×%s] OOPS YOU GOT NO RESULTS :("%(N,M,N))
-            raw_input('\n  [ %sBACK%s ] '%(O,N));mr_error()
+            raw_input('\n  [ %sBACK%s ] '%(O,N));sdj()
     elif innocent in['u','U']:
         ua_settings()
     elif innocent in['0','00']:
@@ -204,7 +204,7 @@ def sdj():
         time.sleep(1);os.system('rm -rf token.txt')
         jalan('\n %s[%s✓%s]%s SUCCESSFULLY DELETED TOKEN'%(N,H,N,H));exit()
     else:
-        print '\n %s[%s×%s] CHECK THE MENU [%s%s%s] IS NOT HERE.!'%(N,M,N,M,innocent,N);time.sleep(2);mr_error()
+        print '\n %s[%s×%s] CHECK THE MENU [%s%s%s] IS NOT HERE.!'%(N,M,N,M,innocent,N);time.sleep(2);sdj()
 
 
 def checkup(nunu):
@@ -237,11 +237,11 @@ def publik(nunu):
         jalan('\n\n %s[%s✓%s] SUCCESSFULLY DUMP ID FROM PUBLIC FRIEND'%(N,H,N))
         print ' [%s•%s] COPY THE OUTPUT FILE >> ( %s%s%s )'%(O,N,M,knt,N)
         os.system('echo "═════════════════════════════════════════════" | lolcat -a -d 2 -8')
-        raw_input(' [%s ENTER%s ] '%(O,N));mr_error()
+        raw_input(' [%s ENTER%s ] '%(O,N));sdj()
     except (KeyError,IOError):
         os.remove(knt)
         jalan('\n %s[%s!%s] ID DUMP FAILED, MAYBE THE ID IS NOT PUBLIC.\n'%(N,M,N))
-        raw_input(' [ %sBACK%s ] '%(O,N));mr_error()
+        raw_input(' [ %sBACK%s ] '%(O,N));sdj()
 
 
 
@@ -270,7 +270,7 @@ def ua_change():
     try:
         open('sdj_ua.txt', 'w').write(mew);time.sleep(2)
         jalan('\n %s[%s✓%s] SUCCESSFULLY CHANGED USER AGENT...'%(N,H,N))
-        raw_input('\n  %s[ %sBACK%s ]'%(N,O,N));mr_error()
+        raw_input('\n  %s[ %sBACK%s ]'%(N,O,N));sdj()
     except:pass
 
 
@@ -281,7 +281,7 @@ def check_uag():
     	user_agent = '%s-'%(M)
     except: pass
     print '\n %s[%s+%s] YOUR USER AGENT : %s%s'%(N,O,N,H,user_agent)
-    raw_input('\n  %s[ %sBACK%s ]'%(N,O,N));mr_error()
+    raw_input('\n  %s[ %sBACK%s ]'%(N,O,N));sdj()
 
 
 class __crack__:
@@ -296,7 +296,7 @@ class __crack__:
             print '\n [%s+%s] TOTAL ID -> %s%s%s' %(O,N,M,len(self.id),N)
         except:
             print '\n %s[%s×%s] FILE [%s%s%s] NOT FUND FIRST DUMP CHECK 1 TO 4 OPTIONS BRO'%(N,M,N,M,self.apk,N);time.sleep(3)
-            raw_input('\n  %s[ %sBACK%s ]'%(N,O,N));mr_error()
+            raw_input('\n  %s[ %sBACK%s ]'%(N,O,N));sdj()
         ___axim_xau___ = raw_input(' [%s?%s] DO YOU WANT TO USE A MANUAL PASSWORD?  [Y/n]: '%(O,N))
         if ___axim_xau___ in ('Y', 'y'):
             print '\n %s[%s!%s] ADD MANUAL PASSWORD EXAMPLE : 123456,556677,102030'%(N,M,N)
@@ -370,7 +370,7 @@ class __crack__:
                os.system('echo -e "\n\n         ╚═━────────────────━━━────────────────━═╝" | lolcat')
                self.__pler__()
         else:
-            print '\n %s[%s×%s] Y/N STUPID! -_-'%(N,M,N);time.sleep(2);mr_error()
+            print '\n %s[%s×%s] Y/N STUPID! -_-'%(N,M,N);time.sleep(2);sdj()
         return
         
 
