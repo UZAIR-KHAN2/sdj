@@ -113,7 +113,7 @@ def hasil(ok,cp):
         print '\n\n [%s!%s] OOPS YOU GOT NO RESULTS :('%(M,N);exit()
 
 
-def sdj():
+def sdj_():
     os.system('clear')
     print logo
     print("%s IF YOU DON'T KNOW HOW TO GET TOKEN TYPE (%sOPEN%s)")%(K,H,K)
@@ -140,13 +140,13 @@ def sdj():
     try:
     	nunu = open('token.txt', 'r').read()
     except IOError:
-        print '\n %s[%s×%s] INVALID TOKEN'%(N,M,N);time.sleep(2);os.system('rm -rf token.txt');azimvau()
+        print '\n %s[%s×%s] INVALID TOKEN'%(N,M,N);time.sleep(2);os.system('rm -rf token.txt');sdj_()
     try:
         nam = requests.get('https://graph.facebook.com/me?access_token=%s'%(nunu)).json()['name'].upper()
         IP = requests.get('https://api.ipify.org').text.strip()
         loc = requests.get('https://ipapi.com/ip_api.php?ip=' + IP, headers={'Referer': 'https://ip-api.com/', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'}).json()['country_name'].upper()
     except KeyError:
-        print '\n %s[%s×%s] INVALID TOKEN'%(N,M,N);time.sleep(2);os.system('rm -rf token.txt');azimvau()
+        print '\n %s[%s×%s] INVALID TOKEN'%(N,M,N);time.sleep(2);os.system('rm -rf token.txt');sdj_()
     except requests.exceptions.ConnectionError:
         exit('\n\n %s[%s!%s] NO INTERNET CONNECTION :(\n'%(N,M,N))
     os.system('clear')
