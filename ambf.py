@@ -128,7 +128,7 @@ def sdj_():
         open('token.txt', 'w').write(nunu)
         raw_input('\n %s*%s PRESS ENTER ' % (O, N))
         checkup(nunu)
-        mr_error()
+        sdj()
     except KeyError:
         print '\n\n %s[%s!%s] INVALID TOKEN :(' % (N, M, N)
         time.sleep(2)
