@@ -135,7 +135,7 @@ def sdj():
         sdj()
 
 
-def mr_error():
+def sdj():
     os.system('clear')
     try:
     	nunu = open('token.txt', 'r').read()
